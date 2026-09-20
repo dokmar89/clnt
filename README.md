@@ -1,48 +1,48 @@
-# PassProve - customer operations portal
+# PassProve — zákaznický provozní portál
 
-A Next.js/Supabase customer-portal variant covering company accounts, shops, billing views and support workflows.
+Varianta zákaznického portálu v Next.js a Supabase pro firemní účty, e-shopy, fakturační přehledy a podporu.
 
-**Status:** Legacy/parallel PassProve implementation retained for reference; not presented as the canonical production release.
+**Stav:** Starší nebo souběžná varianta PassProve uchovaná jako reference; nejde o označení hlavní produkční verze.
 
-## Scope
+## Co projekt obsahuje
 
-- Account and company administration interfaces.
-- Shop management, API-key UI and activity views.
-- Support tickets, knowledge-base pages and wallet/billing components.
-- Authentication actions and registration-approval screens.
+- Správa účtu a firemních údajů.
+- Správa e-shopů, rozhraní API klíčů a přehledy aktivity.
+- Tikety podpory, znalostní báze, peněženka a fakturační komponenty.
+- Přihlašovací akce a obrazovky schvalování registrací.
 
-## Technology
+## Technologie
 
 Next.js, React, TypeScript, Tailwind CSS, Supabase, Nodemailer.
 
-## Architecture and source map
+## Architektura a struktura
 
-- `app/` — portal and authentication routes
-- `components/` — account, shop, billing and support UI
-- `lib/actions/` — server action modules
-- `lib/supabase/` — client/server database helpers
+- `app/` — stránky portálu a přihlašování
+- `components/` — účet, e-shopy, fakturace a podpora
+- `lib/actions/` — moduly serverových akcí
+- `lib/supabase/` — klientské a serverové databázové funkce
 
-## Local development
+## Lokální vývoj
 
-Requires Node.js and npm. From the repository root:
+Potřebujete Node.js a npm. V kořenové složce repozitáře spusťte:
 
 ```sh
 npm install
 npm run dev
 ```
 
-Build command declared by this checkout: `npm run build`.
+Příkaz pro sestavení uvedený v projektu: `npm run build`.
 
-These are the repository scripts, not a claim of a passing build. Dependency installation, build and live integrations were not executed during the documentation review.
+Jde o příkazy deklarované v repozitáři, nikoli o potvrzení úspěšného sestavení. Instalace závislostí, sestavení ani napojení na živé služby nebyly při úpravě dokumentace spuštěny.
 
-## Configuration and limitations
+## Konfigurace a omezení
 
-Review Supabase policies, authentication and server actions before using real customer records. Financial screens do not establish an audited payment system. Multiple Next.js configuration files and mixed route layouts require validation before consolidation.
+Před použitím zákaznických dat zkontrolujte politiky Supabase, přihlašování a serverové akce. Finanční obrazovky nedokládají auditovaný platební systém. Více konfigurací Next.js a kombinované struktury cest vyžadují ověření před sjednocením.
 
-## Portfolio relevance
+## Přínos pro portfolio
 
-A reference for customer-support tooling and the separation between operational UI and service/data access.
+Reference pro nástroje zákaznické podpory a oddělení provozního rozhraní od datových služeb.
 
-## Documentation next steps
+## Co doplnit do dokumentace
 
-Capture screenshots using synthetic data, document a reproducible test run, and record which integrations have been verified. Keep credentials and deployment-specific configuration outside version control.
+Snímky obrazovky s fiktivními daty, opakovatelný postup ověření a přehled skutečně otestovaných integrací. Přihlašovací údaje a konfigurace konkrétního nasazení patří mimo Git.
